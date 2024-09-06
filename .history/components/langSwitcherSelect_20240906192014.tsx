@@ -1,7 +1,7 @@
 "use client";
 
 import { CheckIcon, LanguageIcon } from "@heroicons/react/24/solid";
-import { Languages} from "lucide-react"
+import { Languages } from "lucide-react";
 import * as Select from "@radix-ui/react-select";
 import clsx from "clsx";
 import { useTransition } from "react";

@@ -33,14 +33,9 @@ export default function LocaleSwitcherSelect({
       <Select.Root defaultValue={defaultValue} onValueChange={onChange}>
         <Select.Trigger
           aria-label={label}
-          className={clsx(
-            "rounded-sm p-2 transition-colors hover:bg-slate-200",
-            isPending && "pointer-events-none opacity-60",
-          )}
+          //className={}
         >
-          <Select.Icon>
-            <Languages className="h-6 w-6" />
-          </Select.Icon>
+          <Languages className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
         </Select.Trigger>
         <Select.Portal>
           <Select.Content

@@ -34,6 +34,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "@/components/toggle-button";
 import ToggleFullScreen from "@/components/toggleFullScreen";
 import LocaleSwitcher from "@/components/langSwitcher";
+import LangSelect from "@/components/langSelect";
 
 export const description =
   "A products dashboard with a sidebar navigation and a main content area. The dashboard has a header with a search input and a user menu. The sidebar has a logo, navigation links, and a card with a call to action. The main content area shows an empty state with a call to action.";
@@ -207,7 +208,7 @@ const Dashboard = () => {
           </div>
           <ToggleFullScreen />
           <ModeToggle />
-          <LocaleSwitcher/>
+          <LangSelect />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="secondary" size="icon" className="rounded-full">
