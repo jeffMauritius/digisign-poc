@@ -1,0 +1,10 @@
+{
+"langSwitcher": {
+    "fr": "French",
+    "en": "English",
+    "label": "Language"
+    },
+  "dashboard": {
+    "title": "Dashboard"
+  }
+}

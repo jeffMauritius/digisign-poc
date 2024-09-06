@@ -1,0 +1,10 @@
+{
+  "langSwitcher": {
+    "fr": "Français",
+    "en": "Anglais",
+    "label": "Langage"
+  },
+  "dashboard": {
+    "title": "Tableau de bord"
+  }
+}

@@ -7,17 +7,21 @@ export default function ToggleFullScreen() {
 
   const toggleFullScreen = () => {
     if (!document.fullscreenElement) {
-      setToggleIcon(false);  
+      setToggleIcon(false);
       document.documentElement.requestFullscreen();
     } else if (document.exitFullscreen) {
-        setToggleIcon(true); 
+      setToggleIcon(true);
       document.exitFullscreen();
     }
   };
 
   return (
     <Button variant="outline" size="icon" onClick={toggleFullScreen}>
-       { toggleIcon ? <EnterFullScreenIcon className="h-4 w-4"/> : <ExitFullScreenIcon className="h-4 w-4"/> } 
+      {toggleIcon ? (
+        <EnterFullScreenIcon className="h-4 w-4" />
+      ) : (
+        <ExitFullScreenIcon className="h-4 w-4" />
+      )}
     </Button>
   );
 }
