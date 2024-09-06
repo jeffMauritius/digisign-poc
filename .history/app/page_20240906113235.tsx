@@ -12,8 +12,6 @@ import {
   Search,
   ShoppingCart,
   Users,
-  Maximize2,
-  Minimize2,
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
