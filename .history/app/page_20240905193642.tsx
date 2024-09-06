@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import {
   Bell,
@@ -12,8 +10,6 @@ import {
   Search,
   ShoppingCart,
   Users,
-  Maximize2,
-  Minimize2,
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -35,13 +31,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ModeToggle } from "@/components/toggle-button";
-import ToggleFullScreen from "@/components/toggleFullScreen";
 
 export const description =
   "A products dashboard with a sidebar navigation and a main content area. The dashboard has a header with a search input and a user menu. The sidebar has a logo, navigation links, and a card with a call to action. The main content area shows an empty state with a call to action.";
 
-const Dashboard = () => {
+export function Dashboard() {
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
       <div className="hidden border-r bg-muted/40 md:block">
@@ -207,8 +201,6 @@ const Dashboard = () => {
               </div>
             </form>
           </div>
-          <ToggleFullScreen />
-          <ModeToggle />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="secondary" size="icon" className="rounded-full">
@@ -248,6 +240,4 @@ const Dashboard = () => {
       </div>
     </div>
   );
-};
-
-export default Dashboard;
+}

@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import {
   Bell,
@@ -12,12 +10,11 @@ import {
   Search,
   ShoppingCart,
   Users,
-  Maximize2,
-  Minimize2,
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 import {
   Card,
   CardContent,
@@ -36,7 +33,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "@/components/toggle-button";
-import ToggleFullScreen from "@/components/toggleFullScreen";
 
 export const description =
   "A products dashboard with a sidebar navigation and a main content area. The dashboard has a header with a search input and a user menu. The sidebar has a logo, navigation links, and a card with a call to action. The main content area shows an empty state with a call to action.";
@@ -207,7 +203,9 @@ const Dashboard = () => {
               </div>
             </form>
           </div>
-          <ToggleFullScreen />
+          <Button variant="outline" size="icon">
+            <ChevronRightIcon className="h-4 w-4" />
+          </Button>
           <ModeToggle />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
